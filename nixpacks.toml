@@ -1,4 +1,4 @@
 
 [start]
-cmd = "php artisan migrate:force && php artisan db:seed --force && php artisan serve --host 0.0.0.0 --port $PORT"
+cmd = "export PATH=\"/root/.nix-profile/bin:$PATH\" && php -v && php artisan migrate --force && php artisan db:seed --force && php artisan serve --host 0.0.0.0 --port $PORT"
 
